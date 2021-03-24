@@ -42,12 +42,14 @@ function App() {
 	}
 
 	return (
-		<canvas
-			onMouseDown={startDrawing}
-			onMouseUp={endDrawing}
-			onMouseMove={draw}
-			ref={canvasRef}
-		/>
+    <div style={{ width: "100px", height: "50px" }}>
+      <canvas
+        onMouseDown={startDrawing}
+        onMouseUp={endDrawing}
+        onMouseMove={draw}
+        ref={canvasRef}
+      />
+    </div>
 	)
 }
 
